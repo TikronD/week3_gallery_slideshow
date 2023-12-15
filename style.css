@@ -1,0 +1,48 @@
+* {
+  /* background-color: black; */
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.thumbnails {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  gap: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.thumbnails img {
+  width: 150px;
+  height: auto;
+  border: 1px solid transparent;
+  opacity: 0.3; /* Set the default opacity for all thumbnails */
+}
+
+.thumbnails img.is-active {
+  opacity: 1; /* Set the opacity for the active thumbnail */
+}
+
+#displayedImages {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  /* margin-bottom: -5px; */
+  display: block;
+}
+
+button {
+  color: black;
+  /* text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff; */
+  background-color: transparent;
+  border-radius: 500px;
+  font-size: 15px;
+  width: 50px;
+  height: 50px;
+}
